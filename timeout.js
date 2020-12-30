@@ -8,6 +8,7 @@ let timothy = setTimeout(function () {
 let timer = setTimeout(function () {
   console.log('d')
 }, 0)
-console.log('')
+console.log('e')
 
+// node timeout.js
 // what is the order of the output of the letters and why??
