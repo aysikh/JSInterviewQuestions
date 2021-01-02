@@ -15,6 +15,13 @@ let palindrome = function (word) {
   return true;
 }
 
+let fastestIsPalindrome = function (str) {
+  var len = Math.floor(str.length / 2);
+  for (var i = 0; i < len; i++)
+    if (str[i] !== str[str.length - i - 1])
+      return false;
+  return true;
+}
 
 let palindrome1 = function (word) {
   word = word.replace(/\W/g, '') // \W defines all of the ! ? '' , etc. g looks for ALL of them
@@ -22,10 +29,15 @@ let palindrome1 = function (word) {
   return word === word.split('').reverse().join('');
 }
 
-console.log(palindrome('radar')); //true
-console.log(palindrome('redder')); //true
-console.log(palindrome('window')); //false
+// console.log(palindrome('radar')); //true
+// console.log(palindrome('redder')); //true
+// console.log(palindrome('window')); //false
 
-console.log(palindrome1('radar')); //true
-console.log(palindrome1('redder')); //true
-console.log(palindrome1('window')); //false
+// console.log(palindrome1('radar')); //true
+// console.log(palindrome1('redder')); //true
+// console.log(palindrome1('window')); //false
+
+console.log(fastestIsPalindrome('radar'))
+console.log(fastestIsPalindrome('redder'))
+console.log(fastestIsPalindrome('tacocat'))
+console.log(fastestIsPalindrome('asdf'))
