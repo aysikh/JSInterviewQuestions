@@ -9,3 +9,5 @@ i've been in multiples node.js/javascript interviews this year, my top 10 questi
   8.  Explain settimeout in javascript?
   9. What is the difference btw javascript and node.js?
   10. Explain what is promise and what is a callback?
+
+  https://adriann.github.io/programming_problems.html
