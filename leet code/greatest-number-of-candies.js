@@ -23,3 +23,9 @@
 
 // Input: candies = [12,1,12], extraCandies = 10
 // Output: [true,false,true]
+
+
+var kidsWithCandies = (candies, extraCandies) {
+  let max = Math.max(...candies);
+  return candies.map(item => item + extraCandies >= max);
+}
