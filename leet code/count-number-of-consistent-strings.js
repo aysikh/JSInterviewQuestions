@@ -45,6 +45,23 @@ var countConsistentStrings = function(allowed, words) {
 return count;
 };
 
+
+var countConsistentStrings = function(allowed, words) {
+  let count  = 0;
+  let char ;
+  words.forEach(e => {
+      char= 0;
+      while(char < e.length){
+          if(!allowed.includes(e[char])) break;
+          char++;
+      }
+      if(char === e.length) count++;
+  })
+  return count;
+};
+
+
+
 // allowed must be split up into separate strings
 // after splitting, we then split the letters in words
 // we would loop through words and compare the letters with the letters in allowed
