@@ -3,11 +3,13 @@
  */
 
 let log = console.log;
-log(!!true);
-log(!!"");
-log(!!1);
-log(!!-1);
-log(!!NaN);
-log(!!undefined);
-log(!!"false");
-log(!!null);
+log(!!true); // true
+log(!!false) // false
+log(!!"false"); // true
+log(!!"hello") // true
+log(!!""); // false
+log(!!1); // true
+log(!!-1); // true
+log(!!NaN); // false
+log(!!undefined); // false
+log(!!null); // false

@@ -7,7 +7,8 @@
 let palindrome = function (word) {
   word = word.replace(/\W/g, '') // \W defines all of the ! ? '' , etc. g looks for ALL of them
   word = word.toLowerCase(); // just in case if the word has uppercase letters
-  for (let i = 0; i < word.length; i+=1){ // make a for loop to iterate through the word
+  let half = Math.floor(word.length/2) // find the length of the word and split in half to round down
+  for (let i = 0; i < half.length; i+=1){ // make a for loop to iterate through the word
     if (word[i] !== word[word.length] - 1 - i){ // compare the beginning letter with the last letter in the word
       return false;
     }
