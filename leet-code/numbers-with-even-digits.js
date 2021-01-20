@@ -18,3 +18,23 @@
 // Output: 1 
 // Explanation: 
 // Only 1771 contains an even number of digits.
+
+
+var findNumbers = function(nums) {
+  let count = 0;
+    
+  for(let i = 0; i < nums.length; i++) {
+      let a = nums[i].toString();
+      if(a.length%2 === 0) {
+          count++
+      }
+      
+  }
+  return count;
+};
+
+console.log(findNumbers([333, 22, 1312, 33244]))
+// we have an array of integers
+// we want to iterate through each number in array and figure out what number is even 
+// so how do we figure out if the number is even? we can do a module of 2 
+// if num % 2 then return "number containers num.count digits" 
