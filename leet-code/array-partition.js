@@ -16,3 +16,12 @@
 // Input: nums = [6,2,6,5,1,2]
 // Output: 9
 // Explanation: The optimal pairing is (2, 1), (2, 5), (6, 6). min(2, 1) + min(2, 5) + min(6, 6) = 1 + 2 + 6 = 9.
+
+var arrayPairSum = function(nums) {
+  nums.sort((a, b) => (a - b));
+  let result = 0;
+  for(let i = 0; i < nums.length; i = i + 2){
+      result += nums[i];
+  }
+  return result;
+};
