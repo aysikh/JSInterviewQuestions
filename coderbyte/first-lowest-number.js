@@ -17,11 +17,11 @@
 // console.log('this is a debug message');
 
 function solution(array) {
-  let result = 0;
   let count = 1; 
-  let sortedArray = array.sort();
-  let uniqueArray = [...new Set(sortedArray)]
-  console.log(uniqueArray)
+  array = array.sort((a, b) => a - b);
+  // console.log(array)
+  let uniqueArray = [...new Set(array)]
+  // console.log(uniqueArray)
   let filteredArray = uniqueArray.filter(num => num > 0) 
   for( i = 0; i < filteredArray.length; i++ ){ 
       if (count !== filteredArray[i]){
@@ -31,9 +31,11 @@ function solution(array) {
         count++
       }
   }
+  return count
 }
 
-console.log(solution([-2, 1, 2, 4, 3, 6]))
+// solution([1, 2, 33, 3, 4])
+console.log(solution([1, 2 , 33, 3, 4]))
 
 // sort the array by smallest to largest and set it to a variable
 // filter the array to see if numbers are greater than 0 

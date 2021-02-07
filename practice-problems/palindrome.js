@@ -33,6 +33,7 @@ let palindrome1 = function (word) {
 // console.log(palindrome('radar')); //true
 // console.log(palindrome('redder')); //true
 // console.log(palindrome('window')); //false
+// console.log(palindrome('tacocat'))
 
 // console.log(palindrome1('radar')); //true
 // console.log(palindrome1('redder')); //true
