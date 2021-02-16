@@ -38,7 +38,7 @@ function isAnagramPalindrome(string) {
   // have array to hold letters
     let array = []
     // parse thru the string
-    for (i = 0; i < string.length; i++ ) {
+    for (let i = 0; i < string.length; i++ ) {
     // check each letter of string
       let letter = string[i]
       if (array.includes(letter)) {
