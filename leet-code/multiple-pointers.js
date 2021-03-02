@@ -19,3 +19,7 @@ function averagePair(array, target) {
 } 
 
 console.log(averagePair([1,2,100], 50))
+console.log(averagePair([1,2,3,6], 4.5))
+console.log(averagePair([-1,1,5,6,8], 5.5))
+
+
